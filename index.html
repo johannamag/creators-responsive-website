@@ -5,8 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creators</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <button class="hamburger" id="hamburger" onclick="handle()"></button>
+    <nav id="main-nav" class="main-nav">
+      <a href="#" onclick="handle()">Home</a>
+      <a href="#" onclick="handle()">About</a>
+      <a href="#" onclick="handle()">Creator</a>
+      <a href="#" onclick="handle()">Support</a>
+    </nav>
+    <main class="home">
+      <section class="home__info">
+        <header class="home__header">
+          <h1 class="home__title">YouTube Creators</h1>
+          <span class="home__spacer"> </span>
+          <p class="home_subtext">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            labore nostrum non nihil aperiam repellendus. Doloremque unde eos
+            ipsam illo. Voluptatem assumenda ipsum ullam eius enim dignissimos
+            quam autem alias.
+          </p>
+          <a href="#" class="home__cta">Support a Creator</a>
+        </header>
+      </section>
+      <section class="home__cards">
+        <div class="group-one">
+          <div class="home__card home__card--square">
+            <header>
+              <img src="media/marques-profile.jpg" alt="pic" />
+              <h3>
+                <a href="#">Marques Brownlee</a>
+              </h3>
+            </header>
+          </div>
+          <div class="home__card home__card--large">
+            <header>
+              <img src="media/tmo-profile.jpg" alt="pic" />
+              <h3>
+                <a href="#">Tech me out</a>
+              </h3>
+            </header>
+          </div>
+        </div>
+        <div class="group-two">
+          <div class="home__card home__card--large">
+            <header>
+              <img src="media/ijustin-profile.jpg" alt="pic" />
+              <h3>
+                <a href="#">Justine Ezarik</a>
+              </h3>
+            </header>
+          </div>
+          <div class="home__card home__card--square">
+            <header>
+              <img src="media/peter-profile.jpg" alt="pic" />
+              <h3>
+                <a href="#">Peter McKinnon</a>
+              </h3>
+            </header>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
