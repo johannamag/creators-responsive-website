@@ -254,3 +254,24 @@ body {
 .home__card--large {
   flex: auto;
 }
+
+@media screen and (max-width: 1300px), screen and (max-height: 800px) {
+  .main-nav {
+    width: 100%;
+  }
+  .home__info,
+  .home__cards {
+    grid-column: 1 / span 2;
+  }
+  .home__card--large {
+    height: 0;
+    padding-top: calc(100% - 32px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .group-one,
+  .group-two {
+    grid-column: 1 / span 2;
+  }
+}
